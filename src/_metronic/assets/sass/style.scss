@@ -1,0 +1,522 @@
+//
+// Theme style
+//
+
+// Initialize
+@import "init";
+
+// Components
+@import "./core/components/components";
+@import "components/components";
+
+// Layout
+@import "./core/layout/base";
+@import "layout/layout";
+
+.box-panel {
+    
+    padding: 30px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+}
+
+ h3.heading-tag {
+    margin: 20px 0px;
+    background: #e3e4e5;
+    padding: 12px;
+    color: #000;
+    font-size: 15px;
+    border-left: 3px #f60000 solid;
+}
+div#kt_header {
+    background:#31839f !important;
+}
+
+.svg-icon.svg-icon-1 svg path {
+    color: #333 !important;
+}
+div#kt_content {
+    background: #fff !important;
+}
+p.chart_text:nth-child(1) span.chart_dot {
+    height: 6px;
+    width: 20px;
+    background: #E97D30;
+    font-size: 0px !important;
+}
+
+p.chart_text:nth-child(2) span.chart_dot {
+    height: 6px;
+    width: 20px;
+    background: #62B170;
+    font-size: 0px !important;
+}
+p.chart_text:nth-child(3) span.chart_dot {
+    height: 6px;
+    width: 20px;
+    background: #4BA2DA;
+    font-size: 0px !important;
+}
+
+.aside.aside-dark {
+    background-color: #4BA2DA !important;
+}
+
+.aside.aside-dark .aside-logo {
+    background-color:#4BA2DA !important;
+}
+.aside-dark .menu .menu-item .menu-link.active {
+    transition: color 0.2s ease;
+    background-color: #fff !important;
+    
+}
+.aside-dark .menu .menu-item .menu-link.active .menu-title {
+    color: #000 !important;
+}
+
+.aside-dark .menu .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here), .aside-dark .menu .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) {
+    transition: color 0.2s ease;
+    background-color: #fff !important;
+    
+}
+
+.aside-dark .menu .menu-item.hover:not(.here) > .menu-link:not(.disabled):not(.active):not(.here) .menu-title, .aside-dark .menu .menu-item:not(.here) .menu-link:hover:not(.disabled):not(.active):not(.here) .menu-title {
+    color: #000 !important;
+}
+
+.aside-dark .menu .menu-item .menu-link .menu-icon, .aside-dark .menu .menu-item .menu-link .menu-icon .svg-icon, .aside-dark .menu .menu-item .menu-link .menu-icon i {
+    color: #fff;
+}
+
+.aside-dark .menu .menu-item .menu-link {
+    line-height: 36px;
+    border-bottom: 1px #ccc solid;
+   
+}
+.aside-dark .menu .menu-item .menu-link .menu-title {
+    color: #fff;
+}
+
+.aside .aside-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 49px !important;
+    padding: 0 25px;
+}
+
+a.logo-brand img.h-40px.logo {
+    margin-top: 12px;
+}
+.aside.aside-dark .aside-logo div#kt_aside_toggle {
+    margin-top: 12px;
+}
+.box-panel h3 {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+.box-panel h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.box-panel.bg-1 {
+    background: #f76c71 !important;
+}
+.box-panel.bg-2{background:#62B170 !important}
+.box-panel.bg-3 {
+    background: #dd9664 !important;
+}
+.box-panel.bg-4{background:#4BA2DA !important}
+
+label.totalearning-label span.value {
+    float: right;
+}
+label.totalearning-label {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-top: 12px;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    padding-top: 8px;
+    white-space: nowrap;
+}
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 2px 0;
+    white-space: nowrap;
+    float: right;
+    display: inline;
+}
+.pagination>li {
+    display: inline;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    color: #777;
+    background-color: #fff;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857;
+    text-decoration: none;
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    cursor: default;
+}
+table.dataTable thead .sorting_asc {
+    background: url(../../../../public/media/icons/sort_asc.png) center right no-repeat;
+}
+
+
+table.dataTable thead .sorting {
+    background: url(../../../../public/media/icons/sort_both.png) center right no-repeat;
+}
+
+div.dataTables_wrapper div.dataTables_length label {
+    font-weight: normal;
+    text-align: left;
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 75px;
+    display: inline-block;
+    appearance: auto !important;
+    margin: 0px 5px;
+}
+
+div#sample_1_filter label {
+    float: right;
+    margin-bottom: 20px;;
+}
+div#sample_1_wrapper {
+    border: 1px #ccc solid;
+}
+
+div.dataTables_wrapper div.dataTables_length {
+    padding: 1rem !important;
+}
+div.dataTables_wrapper div.dataTables_filter {
+    padding: 1rem !important;
+}
+
+table#sample_1 th, table#sample_1 td {
+    padding: 10px 20px;
+    line-height: 26px;
+}
+.dataTables_info {
+    margin-left: 20px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin: 10px 20px;
+    white-space: nowrap;
+    float: right;
+    display: inline;
+}
+table#sample_1 th{font-weight: bold;}
+i.fa.fa-edit {
+    color: #439bbf;
+    margin-right: 5px;
+}
+i.fa.fa-trash {
+    color: red;
+    margin-right: 5px;
+}
+
+div.dataTables_wrapper div.dataTables_paginate {
+    padding: 0 !important;
+    margin-left: 0.5rem;
+}
+table#sample_1 tr {
+    border-top: 1px #ccc solid;
+}
+div#sample_1_filter label input.form-control.input-sm.input-small.input-inline {
+    float: left;
+    width: 80%;
+    height: 36px;
+}
+span.search-tag {
+    float: left;
+    line-height: 36px;
+    width: 20%;
+}
+
+.message-boundry {
+    background: #f1f1f1;
+    padding: 20px;
+    border: 1px #ccc solid;
+}
+
+.message-boundry h3 {
+    background: #009ef7 !important;
+    color: #fff;
+    padding: 10px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.message-boundry .message label {
+    display: block;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.message-boundry .message input {
+    width: 100%;
+    line-height: 36px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+    color: #000;
+}
+.message-boundry .message {
+    margin-bottom: 20px;
+}
+
+button.btn.btn-primary.save-btn.center {
+    margin: 20px auto;
+    display: block;
+    padding: calc(0.775rem + 1px) calc(2.5rem + 1px) !important;
+}
+
+.message-boundry.timesetting label {
+    margin-bottom: 7px;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.message-boundry.timesetting select.form-control {
+    margin-bottom: 20px;
+    appearance: auto !important;
+    font-size: 13px;
+    height: 48px;
+}
+button.btn.btn-sucess.cancel-btn {
+    background: #ccc;
+    margin-left: 12px;
+}
+button.btn.btn-sucess.cancel-btn:hover {
+    background: rgb(129, 127, 127);
+   
+}
+button.btn.btn-sucess.save-btn {
+    background: #4BA2DA;
+    color: #fff;
+    padding: 10px 30px !important;
+}
+button.btn.btn-sucess.save-btn:hover{background: #2179af;}
+
+.form-group.center.align-center {
+    text-align: center;
+}
+
+h3.time-head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+h1.d-flex.align-items-center.text-dark.fw-bolder.my-1.fs-3, .d-flex.align-items-center.text-dark.fw-bolder.my-1.fs-3.h1 {
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+button.add-user-btn.btn.btn-primary {
+    float: right;
+    position: relative;
+    margin-top: -80px;
+    z-index: 99;
+}
+
+.form-user .modal-dialog {
+    max-width: 800px !important;
+}
+form.add-user-form .form-group {
+    margin-bottom: 20px;
+}
+
+form.add-user-form input.form-control {
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    font-weight: normal !important;
+    color: #000 !important;
+}
+
+form.add-user-form select.form-control {
+    height: 42px;
+    font-size: 14px;
+    font-weight: normal !important;
+    color: #000 !important;
+    appearance: auto;
+}
+
+form.add-user-form input::placeholder, form.add-user-form select::placeholder {
+   
+    font-size: 14px;
+    font-weight: normal !important;
+    color: #000 !important;
+}
+
+.form-group.buttons-group {
+    text-align: center;
+}
+button.btn.btn-primary.add-btn {
+    margin-right: 12px;
+    padding: 10px 30px !important;
+}
+button.btn.btn-primary.cancel-btn {
+   background: #ccc;
+    padding: 10px 30px !important;
+}
+button.btn.btn-primary.cancel-btn:hover{background: #000  !important;}
+
+.form-user .modal-title.h4 {
+    text-align: center !important;
+    width: 100%;
+    color: #009ef7;
+    text-transform: uppercase;
+    position: relative;
+}
+.form-user .modal-title.h4:after {
+    background: #009ef7;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    left: 50%;
+    border-radius: 100%;
+    right: auto;
+    bottom: -8px;
+    transform: translate(-50%,-50%);
+}
+input.form-control.readyonly {
+    background: #ccc;
+}
+
+
+.dataTables_filter {
+    float: right;
+  }
+  
+  .table-hover > tbody > tr:hover {
+      background-color: lighten(cyan, 40%);
+  }
+  //important if we want to add ellipsis
+  //to cells with content longer than width
+  .table {
+    @media only screen and (min-width: 768px) {
+      table-layout: fixed;
+      //this declaration overwrites 
+      //the default plugin style
+      max-width: 100% !important;
+    }
+  }
+  
+  thead {
+    background: #ddd;
+  }
+  
+  .table td:nth-child(2) {
+    overflow: hidden;
+    //white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .highlight {
+    background: lighten(yellow,30%);
+  }
+  
+  @media only screen and (max-width: 767px) {
+    
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr,
+    tfoot tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50% !important;
+    }
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+    
+    .table td:nth-child(1) {
+        background: #ccc;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+    }
+    /*
+      Label the data
+      */
+    td:nth-of-type(1):before {
+      content: "Name";
+    }
+    td:nth-of-type(2):before {
+      content: "Position";
+    }
+    td:nth-of-type(3):before {
+      content: "Office";
+    }
+    td:nth-of-type(4):before {
+      content: "Age";
+    }
+    td:nth-of-type(5):before {
+      content: "Start date";
+    }
+    td:nth-of-type(6):before {
+      content: "Salary";
+    }
+    
+    .dataTables_length {
+      display: none;
+    }
+  }
+  
