@@ -4,12 +4,14 @@ import {MasterLayout} from '../../_metronic/layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
 import {DashboardWrapper} from '../pages/dashboard/DashboardWrapper'
 import {UserProfile} from '../pages/user-profile/user-profile'
+import {UserDetail} from '../pages/user-details/user-detail'
 import {Messages} from '../pages/messages/messages'
 import {TimeSetting} from '../pages/time-setting/time-setting'
 import {MenuTestPage} from '../pages/MenuTestPage'
 import {getCSSVariableValue} from '../../_metronic/assets/ts/_utils'
 import {WithChildren} from '../../_metronic/helpers'
 import BuilderPageWrapper from '../pages/layout-builder/BuilderPageWrapper'
+
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
@@ -27,6 +29,7 @@ const PrivateRoutes = () => {
         {/* Pages */}
         <Route path='dashboard' element={<DashboardWrapper />} />
         <Route path='user-profile' element={<UserProfile />} />
+        <Route path='user-detail' element={<UserDetail />} />
         <Route path='messages' element={<Messages />} />
         <Route path='time-setting' element={<TimeSetting />} />
         <Route path='builder' element={<BuilderPageWrapper />} />
