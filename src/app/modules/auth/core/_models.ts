@@ -66,3 +66,9 @@ export interface UserModel {
   address?: UserAddressModel
   socialNetworks?: UserSocialNetworksModel
 }
+
+export interface TimezoneModel{
+  id?:number,
+  morningtime:number|null,
+  eveningtime:number|null
+}

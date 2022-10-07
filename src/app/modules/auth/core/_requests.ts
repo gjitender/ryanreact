@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {AuthModel, UserModel} from './_models'
+import { AuthModel, UserModel, TimezoneModel } from './_models'
 
 // const API_URL = process.env.REACT_APP_API_URL
 
@@ -38,7 +38,7 @@ export function register(
 
 // Server should return object => { result: boolean } (Is Email in DB)
 export function requestPassword(email: string) {
-  return axios.post<{result: boolean}>(REQUEST_PASSWORD_URL, {
+  return axios.post<{ result: boolean }>(REQUEST_PASSWORD_URL, {
     email,
   })
 }
@@ -47,18 +47,35 @@ export function getUserByToken(token: string) {
 
   var config = {
     method: 'post',
-    headers: { 
-      'Authorization': 'Token eeacd04b658721afe81d657ea445de4bc04fef82', 
+    headers: {
+      'Authorization': 'Token eeacd04b658721afe81d657ea445de4bc04fef82',
       'Cookie': 'csrftoken=IlJ7P2TnNZjRlMvQzXNa2AytYiiKdZ65; sessionid=we76fl01bmcwucxre5ldjdm5e259fpke'
     }
   };
-  
-return axios.post<UserModel>('http://54.158.30.145:4000/apis/admin/aboutme/',null, {
-  headers: { 
-    'Authorization': 'Token ' + token
-  }
-})
 
+  return axios.post<UserModel>('http://54.158.30.145:4000/apis/admin/aboutme/', null, {
+    headers: {
+      'Authorization': 'Token ' + token
+    }
+  })
+}
 
+export function updateTimezone(token: string, timezoneObject: TimezoneModel) {
+  return axios.put<TimezoneModel>('http://54.158.30.145:4000/timezone/manage/', timezoneObject,
+    {
+      headers: {
+        'Authorization': 'Token ' + token
+      }
+    }
+  )
+}
 
+export function retrieveTimezone(token: string) {
+  return axios.get<TimezoneModel>('http://54.158.30.145:4000/timezone/manage/',
+    {
+      headers: {
+        'Authorization': 'Token ' + token
+      }
+    }
+  )
 }
