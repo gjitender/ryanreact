@@ -67,8 +67,20 @@ export interface UserModel {
   socialNetworks?: UserSocialNetworksModel
 }
 
-export interface TimezoneModel{
-  id?:number,
-  morningtime:number|null,
-  eveningtime:number|null
+export interface TimezoneModel {
+  id?: number,
+  morningtime: number | null,
+  eveningtime: number | null
+}
+
+export interface MessageModel {
+  id?: number,
+  morning_initial_msg: string,
+  morning_response_good: string,
+  morning_response_bad: string,
+  morning_response_bad_quote: string,
+  evening_initial_msg: string,
+  evening_response_good: string,
+  evening_response_bad: string,
+  evening_response_bad_quote: string
 }

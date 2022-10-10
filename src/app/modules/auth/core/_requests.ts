@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { AuthModel, UserModel, TimezoneModel } from './_models'
+import { AuthModel, UserModel, TimezoneModel, MessageModel } from './_models'
 
 // const API_URL = process.env.REACT_APP_API_URL
 
@@ -72,6 +72,26 @@ export function updateTimezone(token: string, timezoneObject: TimezoneModel) {
 
 export function retrieveTimezone(token: string) {
   return axios.get<TimezoneModel>('http://54.158.30.145:4000/timezone/manage/',
+    {
+      headers: {
+        'Authorization': 'Token ' + token
+      }
+    }
+  )
+}
+
+export function getMessages(token: string) {
+  return axios.get<MessageModel>('http://54.158.30.145:4000/message/manage/',
+    {
+      headers: {
+        'Authorization': 'Token ' + token
+      }
+    }
+  )
+}
+
+export function saveMessages(token: string, messageObject: MessageModel) {
+  return axios.put<MessageModel>('http://54.158.30.145:4000/message/manage/', messageObject,
     {
       headers: {
         'Authorization': 'Token ' + token

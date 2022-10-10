@@ -15,7 +15,7 @@ const TimeSettingPage: FC = () => {
   useEffect(()=>{
     retrieveTimezone(auth?auth.key:'').then(result=>{
       console.log('result', result)
-      let data=result.data[0]
+      let data:TimezoneModel=result.data[0]
       setTime({morningtime:data.morningtime?data.morningtime:-1, eveningtime:data.eveningtime?data.eveningtime:-1});
     });
     // console.log('test', data);
@@ -23,8 +23,11 @@ const TimeSettingPage: FC = () => {
   }, [])
 
   const submitTimezone = (): void => {
-      let timesetting=updateTimezone(auth?auth.key:'', time)
-      console.log('time setting', timesetting)
+      updateTimezone(auth?auth.key:'', time).then((result)=>{
+        let timesetting:TimezoneModel=result.data[0];
+        setTime({morningtime:timesetting.morningtime?timesetting.morningtime:-1, eveningtime:timesetting.eveningtime?timesetting.eveningtime:-1});
+      })
+      // console.log('time setting', timesetting)
   }
 
   const handleTimeChange=(type:string, value:number)=>{
